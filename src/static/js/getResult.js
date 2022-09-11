@@ -11,7 +11,6 @@ function getResult() {
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 resultInput.value = this.responseText
-                document.getElementById('result-test').innerHTML = this.responseText
             }
         }
         xmlhttp.open("GET", `controller.php?amount=${amount}&from=${fromUnit}&to=${toUnit}`, true)
