@@ -3,6 +3,17 @@
 require_once "src/calc.php";
 
 class calcTest extends PHPUnit\Framework\TestCase {
+
+    public function testIncompatibleUnits() {
+        $result = calc("meter", "celcius", "100");
+        $this->assertEquals($result, 'incompatible units');
+
+        $result = calc("celcius", "meter", "100");
+        $this->assertEquals($result, 'incompatible units');
+
+        $result = calc("fahrenheit", "inch", "100");
+        $this->assertEquals($result, 'incompatible units');
+    }
     
     public function testDistance() {
         $result = calc("meter", "meter", "1");

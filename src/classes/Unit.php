@@ -2,8 +2,9 @@
 
 class Unit {
 
-    public function __construct(Converter $converter) {
+    public function __construct(Converter $converter, String $unitType) {
         $this->converter = $converter;
+        $this->unitType = $unitType;
     }
 
     function setAmount(String $amount) {
@@ -21,6 +22,10 @@ class Unit {
 
     function getAmountInStandardUnit() {
         return $this->amountInStandardUnit;
+    }
+
+    function getUnitType() {
+        return $this->unitType;
     }
 
     function convertFromStandardUnit(String $amount) {
