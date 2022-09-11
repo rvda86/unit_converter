@@ -1,0 +1,74 @@
+/* settings */
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+#grid {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+        "header"
+        "main";
+}
+
+/* body */
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+/* header */
+#header {
+    margin: auto;
+}
+
+/* main */
+main {
+    margin: auto;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: row;
+}
+
+#unit-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.unit-li {
+    padding: 10px;
+    background-color: grey;
+}
+
+#unit-calc-div {
+    padding: 10px;
+    margin: 0;
+    background-color: white;
+}
+
+.amount-input {
+    padding: 5px;
+    width: 150px;
+}
+
+.unit-select {
+    padding: 5px;
+    background-color: white;
+}
+
+p {
+    padding: 5px;
+    margin: 0;
+}
+
+#result-test  {
+    color: white;
+}
