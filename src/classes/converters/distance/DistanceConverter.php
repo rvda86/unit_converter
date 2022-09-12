@@ -9,11 +9,11 @@ class DistanceConverter extends Converter {
         $this->ratio_to_meter = $ratio_to_meter;
     }
 
-    function convertFromStandardUnit(String $amount) {
+    public function convertFromStandardUnit(String $amount) {
         return bcdiv($amount, $this->ratio_to_meter);
     }
 
-    function convertToStandardUnit(String $amount) {
+    public function convertToStandardUnit(String $amount) {
         return bcmul($amount, $this->ratio_to_meter);
     }
 }

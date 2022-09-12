@@ -1,9 +1,9 @@
 <?php
 
 abstract class Converter {
-    function convertFromStandardUnit(String $amount) {
+    public function convertFromStandardUnit(String $amount) {
     }
 
-    function convertToStandardUnit(String $amount) {
+    public function convertToStandardUnit(String $amount) {
     }
 }
