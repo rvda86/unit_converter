@@ -23,6 +23,8 @@ function calc(String $from, String $to, String $amount) {
         return (float)$result;   
     } catch (IncompatibleUnitsException $e) {
         return $e->getMessage();
+    } catch (ValueTooLowException $e) {
+        return $e->getMessage();
     }
 
 }
