@@ -8,4 +8,8 @@ class ValueTooLowException extends Exception {
     protected $message = "input value too low";
 }
 
+class InvalidValueException extends Exception {
+    protected $message = "invalid input value";
+}
+
 ?>

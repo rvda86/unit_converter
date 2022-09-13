@@ -7,6 +7,16 @@ require_once "src/exceptions.php";
 function calc(String $from, String $to, String $amount) {
 
     try {
+
+        $validFloat = filter_var($amount, FILTER_VALIDATE_FLOAT);
+        if ($amount == "-" || $amount == "-.") {
+            $validFloat = true;
+        }
+
+        if (!$validFloat) {
+            throw new InvalidValueException();
+        }
+
         bcscale(100);
         $fromUnit = unitFactory($from);
         $toUnit = unitFactory($to);
@@ -24,6 +34,8 @@ function calc(String $from, String $to, String $amount) {
     } catch (IncompatibleUnitsException $e) {
         return $e->getMessage();
     } catch (ValueTooLowException $e) {
+        return $e->getMessage();
+    } catch (InvalidValueException $e) {
         return $e->getMessage();
     }
 
