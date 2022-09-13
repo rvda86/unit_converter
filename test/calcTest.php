@@ -165,16 +165,16 @@ class calcTest extends PHPUnit\Framework\TestCase {
         $this->assertEquals($result, "0.0001"); 
 
         $result = calc("square meter", "square inch", "100");
-        $this->assertEquals($result, "155000.31"); 
+        $this->assertEquals($result, "155000.31000062"); 
 
         $result = calc("square meter", "square foot", "100");
-        $this->assertEquals($result, "1076.3910417"); 
+        $this->assertEquals($result, "1076.3910416709723"); 
 
         $result = calc("square meter", "square yard", "100");
-        $this->assertEquals($result, "119.59900463"); 
+        $this->assertEquals($result, "119.59900463010803"); 
 
         $result = calc("square meter", "square mile", "100");
-        $this->assertEquals($result, "0.0621371192237334"); 
+        $this->assertEquals($result, "0.0000386102"); 
     }
 
     public function testSquareMillimeter() {
@@ -251,7 +251,7 @@ class calcTest extends PHPUnit\Framework\TestCase {
         $this->assertEquals($result, "-100"); 
 
         $result = calc("square mile", "square meter", "100");
-        $this->assertEquals($result, "258999000"); 
+        $this->assertEquals($result, "258998811.0336"); 
     }
 
     public function testSquareHectare() {

@@ -5,7 +5,7 @@
         <div id="unit-list-div">
             <ul id="unit-ul">
                 <li class="unit-li" id="distance-li" onclick="showDistances()">Distance</li>
-                <li class="unit-li" id="area-li" onclick="">Area</li>
+                <li class="unit-li" id="area-li" onclick="showAreas()">Area</li>
                 <li class="unit-li" id="volume-li" onclick="">Volume</li>
                 <li class="unit-li" id="temperature-li" onclick="showTemperatures()">Temperature</li>
                 <li class="unit-li" id="weight-li" onclick="">Weight</li>

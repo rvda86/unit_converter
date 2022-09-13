@@ -11,6 +11,13 @@ function resetValues() {
     Array.from(document.getElementById('unit-ul').children).forEach((item) => item.style.backgroundColor = "grey")
 }
 
+function showAreas() {
+    resetValues()
+    document.getElementById("area-li").style.backgroundColor = "white"
+    AREAS.forEach((unit) => fromSelect.innerHTML += `<option>${unit}</option>`)
+    AREAS.forEach((unit) => toSelect.innerHTML += `<option>${unit}</option>`)
+}
+
 function showDistances() {
     resetValues()
     document.getElementById("distance-li").style.backgroundColor = "white"

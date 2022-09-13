@@ -22,6 +22,7 @@
         </div>
 
         <script>
+            const AREAS = <?php echo json_encode(AREAS); ?>;
             const DISTANCES = <?php echo json_encode(DISTANCES); ?>;
             const TEMPERATURES = <?php echo json_encode(TEMPERATURES); ?>;
         </script>
