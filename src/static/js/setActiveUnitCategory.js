@@ -11,27 +11,6 @@ function resetValues() {
     Array.from(document.getElementById('unit-ul').children).forEach((item) => item.style.backgroundColor = "grey")
 }
 
-function showAreas() {
-    resetValues()
-    document.getElementById("area-li").style.backgroundColor = "white"
-    AREAS.forEach((unit) => fromSelect.innerHTML += `<option>${unit}</option>`)
-    AREAS.forEach((unit) => toSelect.innerHTML += `<option>${unit}</option>`)
-}
-
-function showDistances() {
-    resetValues()
-    document.getElementById("distance-li").style.backgroundColor = "white"
-    DISTANCES.forEach((unit) => fromSelect.innerHTML += `<option>${unit}</option>`)
-    DISTANCES.forEach((unit) => toSelect.innerHTML += `<option>${unit}</option>`)
-}
-
-function showTemperatures() {
-    resetValues()
-    document.getElementById("temperature-li").style.backgroundColor = "white"
-    TEMPERATURES.forEach((unit) => fromSelect.innerHTML += `<option>${unit}</option>`)
-    TEMPERATURES.forEach((unit) => toSelect.innerHTML += `<option>${unit}</option>`)
-}
-
 constantsArrays = {"distance": DISTANCES, "area": AREAS, "temperature": TEMPERATURES}
 
 function showCategory(category) {
