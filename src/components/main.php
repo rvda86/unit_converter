@@ -6,9 +6,9 @@
             <ul id="unit-ul">
                 <li class="unit-li" id="distance-li" onclick="showCategory('distance')">Distance</li>
                 <li class="unit-li" id="area-li" onclick="showCategory('area')">Area</li>
-                <li class="unit-li" id="volume-li" onclick="">Volume</li>
+                <li class="unit-li" id="volume-li" onclick="showCategory('volume')">Volume</li>
                 <li class="unit-li" id="temperature-li" onclick="showCategory('temperature')">Temperature</li>
-                <li class="unit-li" id="weight-li" onclick="">Weight</li>
+                <li class="unit-li" id="weight-li" onclick="showCategory('weight')">Weight</li>
             </ul>
         </div>
 

@@ -156,12 +156,12 @@ class calcTest extends PHPUnit\Framework\TestCase {
         $this->assertEquals(calc("cubic meter", "cubic millimeter", "100"), "100000000000"); 
         $this->assertEquals(calc("cubic meter", "cubic centimeter", "100"), "100000000"); 
         $this->assertEquals(calc("cubic meter", "cubic kilometer", "100"), "0.0000001"); 
-        $this->assertEquals(calc("cubic meter", "cubic inch", "100"), "6102374.41"); 
-        $this->assertEquals(calc("cubic meter", "cubic foot", "100"), "3531.46667"); 
-        $this->assertEquals(calc("cubic meter", "cubic yard", "100"), "130.795062"); 
+        $this->assertEquals(calc("cubic meter", "cubic inch", "100"), "6102374.409473228"); 
+        $this->assertEquals(calc("cubic meter", "cubic foot", "100"), "3531.466672148859"); 
+        $this->assertEquals(calc("cubic meter", "cubic yard", "100"), "130.79506193143922"); 
         $this->assertEquals(calc("cubic meter", "cubic mile", "1000000"), "0.000239912759"); 
         $this->assertEquals(calc("cubic meter", "liter", "100"), "100000"); 
-        $this->assertEquals(calc("cubic meter", "gallon", "100"), "26417.217686"); 
+        $this->assertEquals(calc("cubic meter", "gallon", "100"), "26417.20526372959"); 
     }
 
     public function testCubicMillimeter() {
@@ -173,25 +173,25 @@ class calcTest extends PHPUnit\Framework\TestCase {
     public function testCubicCentimeter() {
         $this->assertEquals(calc("cubic centimeter", "cubic centimeter", "100"), "100"); 
         $this->assertEquals(calc("cubic centimeter", "cubic centimeter", "-100"), "-100"); 
-        $this->assertEquals(calc("cubic centimeter", "cubic meter", "100"), "0.001"); 
+        $this->assertEquals(calc("cubic centimeter", "cubic meter", "1000"), "0.001"); 
     }
 
     public function testCubicKilometer() {
         $this->assertEquals(calc("cubic kilometer", "cubic kilometer", "100"), "100"); 
         $this->assertEquals(calc("cubic kilometer", "cubic kilometer", "-100"), "-100"); 
-        $this->assertEquals(calc("cubic kilometer", "cubic meter", "1"), "100000000"); 
+        $this->assertEquals(calc("cubic kilometer", "cubic meter", "1"), "1000000000"); 
     }
 
     public function testCubicInch() {
         $this->assertEquals(calc("cubic inch", "cubic inch", "100"), "100"); 
         $this->assertEquals(calc("cubic inch", "cubic inch", "-100"), "-100"); 
-        $this->assertEquals(calc("cubic inch", "cubic meter", "100"), "0.001639"); 
+        $this->assertEquals(calc("cubic inch", "cubic meter", "100"), "0.0016387064"); 
     }
 
     public function testCubicYard() {
         $this->assertEquals(calc("cubic yard", "cubic yard", "100"), "100"); 
         $this->assertEquals(calc("cubic yard", "cubic yard", "-100"), "-100"); 
-        $this->assertEquals(calc("cubic yard", "cubic meter", "100"), "76.45549"); 
+        $this->assertEquals(calc("cubic yard", "cubic meter", "100"), "76.4554857984"); 
     }
 
     public function testCubicFoot() {
@@ -203,19 +203,19 @@ class calcTest extends PHPUnit\Framework\TestCase {
     public function testCubicMile() {
         $this->assertEquals(calc("cubic mile", "cubic mile", "100"), "100"); 
         $this->assertEquals(calc("cubic mile", "cubic mile", "-100"), "-100"); 
-        $this->assertEquals(calc("cubic mile", "cubic meter", "1"), "4168181825.44058"); 
+        $this->assertEquals(calc("cubic mile", "cubic meter", "1"), "4168181825.4405794"); 
     }
 
     public function testLiter() {
         $this->assertEquals(calc("liter", "liter", "100"), "100"); 
         $this->assertEquals(calc("liter", "liter", "-100"), "-100"); 
-        $this->assertEquals(calc("liter", "cubic meter", "100"), "1000000"); 
+        $this->assertEquals(calc("liter", "cubic meter", "100"), "0.1"); 
     }
 
     public function testGallon() {
         $this->assertEquals(calc("gallon", "gallon", "100"), "100"); 
         $this->assertEquals(calc("gallon", "gallon", "-100"), "-100"); 
-        $this->assertEquals(calc("gallon", "cubic meter", "100"), "0.00378541178"); 
+        $this->assertEquals(calc("gallon", "cubic meter", "100"), "0.378541178"); 
     }
 
     public function testGram() {
@@ -224,8 +224,8 @@ class calcTest extends PHPUnit\Framework\TestCase {
         $this->assertEquals(calc("gram", "milligram", "100"), "100000"); 
         $this->assertEquals(calc("gram", "kilogram", "100"), "0.1"); 
         $this->assertEquals(calc("gram", "metric ton", "100"), "0.0001"); 
-        $this->assertEquals(calc("gram", "ounce", "100"), "3.5273990723"); 
-        $this->assertEquals(calc("gram", "pound", "100"), "0.220462442"); 
+        $this->assertEquals(calc("gram", "ounce", "100"), "3.527396198068672"); 
+        $this->assertEquals(calc("gram", "pound", "100"), "0.22046226218487758"); 
     }
 
     public function testMilligram() {
@@ -249,13 +249,13 @@ class calcTest extends PHPUnit\Framework\TestCase {
     public function testOunce() {
         $this->assertEquals(calc("ounce", "ounce", "100"), "100"); 
         $this->assertEquals(calc("ounce", "ounce", "-100"), "-100"); 
-        $this->assertEquals(calc("ounce", "gram", "100"), "2834.95"); 
+        $this->assertEquals(calc("ounce", "gram", "100"), "2834.95231"); 
     }
 
     public function testPound() {
         $this->assertEquals(calc("pound", "pound", "100"), "100"); 
         $this->assertEquals(calc("pound", "pound", "-100"), "-100"); 
-        $this->assertEquals(calc("pound", "gram", "100"), "45359.2"); 
+        $this->assertEquals(calc("pound", "gram", "100"), "45359.237"); 
     }
 
     public function testCelcius() {

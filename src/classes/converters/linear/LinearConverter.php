@@ -5,6 +5,8 @@ require_once 'src/classes/converters/Converter.php';
 class LinearConverter extends Converter {
     // standard distance unit: meter
     // standard area unit: square meter
+    // standard volume unit: cubic meter
+    // standard weight unit: gram
     // do not use for temperature conversions
 
     public function __construct(String $ratioToStandardUnit) {

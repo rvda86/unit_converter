@@ -11,7 +11,7 @@ function resetValues() {
     Array.from(document.getElementById('unit-ul').children).forEach((item) => item.style.backgroundColor = "grey")
 }
 
-constantsArrays = {"distance": DISTANCES, "area": AREAS, "temperature": TEMPERATURES}
+constantsArrays = {"distance": DISTANCES, "area": AREAS, "volume": VOLUMES, "weight": WEIGHTS, "temperature": TEMPERATURES}
 
 function showCategory(category) {
     resetValues()

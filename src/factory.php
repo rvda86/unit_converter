@@ -18,6 +18,7 @@ function unitFactory(String $unit) {
                     "foot"=>new Unit(new LinearConverter(DISTANCE_RATIO_TO_METER["foot"]), "distance"), 
                     "yard"=>new Unit(new LinearConverter(DISTANCE_RATIO_TO_METER["yard"]), "distance"),
                     "mile"=>new Unit(new LinearConverter(DISTANCE_RATIO_TO_METER["mile"]), "distance"), 
+
                     "square millimeter"=>new Unit(new LinearConverter(AREA_RATIO_TO_SQUARE_METER["square millimeter"]), "area"),
                     "square centimeter"=>new Unit(new LinearConverter(AREA_RATIO_TO_SQUARE_METER["square centimeter"]), "area"),
                     "square meter"=>new Unit(new LinearConverter(AREA_RATIO_TO_SQUARE_METER["square meter"]), "area"),
@@ -28,6 +29,25 @@ function unitFactory(String $unit) {
                     "square mile"=>new Unit(new LinearConverter(AREA_RATIO_TO_SQUARE_METER["square mile"]), "area"),
                     "acre"=>new Unit(new LinearConverter(AREA_RATIO_TO_SQUARE_METER["acre"]), "area"),
                     "hectare"=>new Unit(new LinearConverter(AREA_RATIO_TO_SQUARE_METER["hectare"]), "area"),
+
+                    "cubic millimeter"=>new Unit(new LinearConverter(CUBIC_RATIO_TO_CUBIC_METER["cubic millimeter"]), "volume"),
+                    "cubic centimeter"=>new Unit(new LinearConverter(CUBIC_RATIO_TO_CUBIC_METER["cubic centimeter"]), "volume"),
+                    "cubic meter"=>new Unit(new LinearConverter(CUBIC_RATIO_TO_CUBIC_METER["cubic meter"]), "volume"),
+                    "cubic kilometer"=>new Unit(new LinearConverter(CUBIC_RATIO_TO_CUBIC_METER["cubic kilometer"]), "volume"),
+                    "cubic inch"=>new Unit(new LinearConverter(CUBIC_RATIO_TO_CUBIC_METER["cubic inch"]), "volume"),
+                    "cubic foot"=>new Unit(new LinearConverter(CUBIC_RATIO_TO_CUBIC_METER["cubic foot"]), "volume"),
+                    "cubic yard"=>new Unit(new LinearConverter(CUBIC_RATIO_TO_CUBIC_METER["cubic yard"]), "volume"),
+                    "cubic mile"=>new Unit(new LinearConverter(CUBIC_RATIO_TO_CUBIC_METER["cubic mile"]), "volume"),
+                    "liter"=>new Unit(new LinearConverter(CUBIC_RATIO_TO_CUBIC_METER["liter"]), "volume"),
+                    "gallon"=>new Unit(new LinearConverter(CUBIC_RATIO_TO_CUBIC_METER["gallon"]), "volume"),
+
+                    "gram"=>new Unit(new LinearConverter(WEIGHT_RATIO_TO_GRAM["gram"]), "weight"),
+                    "milligram"=>new Unit(new LinearConverter(WEIGHT_RATIO_TO_GRAM["milligram"]), "weight"),
+                    "kilogram"=>new Unit(new LinearConverter(WEIGHT_RATIO_TO_GRAM["kilogram"]), "weight"),
+                    "metric ton"=>new Unit(new LinearConverter(WEIGHT_RATIO_TO_GRAM["metric ton"]), "weight"),
+                    "ounce"=>new Unit(new LinearConverter(WEIGHT_RATIO_TO_GRAM["ounce"]), "weight"),
+                    "pound"=>new Unit(new LinearConverter(WEIGHT_RATIO_TO_GRAM["pound"]), "weight"),
+                    
                     "celcius"=>new Unit(new CelciusConverter(), "temperature"),
                     "kelvin"=>new Unit(new KelvinConverter(), "temperature"),
                     "fahrenheit"=>new Unit(new FahrenheitConverter(), "temperature"),
