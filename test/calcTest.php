@@ -228,6 +228,36 @@ class calcTest extends PHPUnit\Framework\TestCase {
         $this->assertEquals(calc("gram", "pound", "100"), "0.220462442"); 
     }
 
+    public function testMilligram() {
+        $this->assertEquals(calc("milligram", "milligram", "100"), "100"); 
+        $this->assertEquals(calc("milligram", "milligram", "-100"), "-100"); 
+        $this->assertEquals(calc("milligram", "gram", "100"), "0.1"); 
+    }
+
+    public function testKilogram() {
+        $this->assertEquals(calc("kilogram", "kilogram", "100"), "100");
+        $this->assertEquals(calc("kilogram", "kilogram", "-100"), "-100"); 
+        $this->assertEquals(calc("kilogram", "gram", "100"), "100000"); 
+    }
+
+    public function testMetricTon() {
+        $this->assertEquals(calc("metric ton", "metric ton", "100"), "100"); 
+        $this->assertEquals(calc("metric ton", "metric ton", "-100"), "-100"); 
+        $this->assertEquals(calc("metric ton", "gram", "100"), "100000000"); 
+    }
+
+    public function testOunce() {
+        $this->assertEquals(calc("ounce", "ounce", "100"), "100"); 
+        $this->assertEquals(calc("ounce", "ounce", "-100"), "-100"); 
+        $this->assertEquals(calc("ounce", "gram", "100"), "2834.95"); 
+    }
+
+    public function testPound() {
+        $this->assertEquals(calc("pound", "pound", "100"), "100"); 
+        $this->assertEquals(calc("pound", "pound", "-100"), "-100"); 
+        $this->assertEquals(calc("pound", "gram", "100"), "45359.2"); 
+    }
+
     public function testCelcius() {
         $this->assertEquals(calc("celcius", "celcius", "100"), "100"); 
         $this->assertEquals(calc("celcius", "celcius", "-100"), "-100"); 
