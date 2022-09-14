@@ -1,7 +1,5 @@
 <?php
 
-require_once "src/classes/converters/area/AreaConverter.php";
-require_once "src/classes/converters/distance/DistanceConverter.php";
 require_once "src/classes/converters/linear/LinearConverter.php";
 require_once "src/classes/converters/temperature/FahrenheitConverter.php";
 require_once "src/classes/converters/temperature/RankineConverter.php";
