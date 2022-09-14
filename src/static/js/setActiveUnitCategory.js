@@ -32,4 +32,14 @@ function showTemperatures() {
     TEMPERATURES.forEach((unit) => toSelect.innerHTML += `<option>${unit}</option>`)
 }
 
-showDistances()
+constantsArrays = {"distance": DISTANCES, "area": AREAS, "temperature": TEMPERATURES}
+
+function showCategory(category) {
+    resetValues()
+    document.getElementById(`${category}-li`).style.backgroundColor = "white"
+    constantsArrays[category].forEach((unit) => fromSelect.innerHTML += `<option>${unit}</option>`)
+    constantsArrays[category].forEach((unit) => toSelect.innerHTML += `<option>${unit}</option>`)
+}
+
+// default category
+showCategory("distance")
