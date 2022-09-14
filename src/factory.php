@@ -1,13 +1,13 @@
 <?php
 
-require "src/classes/converters/area/AreaConverter.php";
-require "src/classes/converters/distance/DistanceConverter.php";
-require "src/classes/converters/temperature/FahrenheitConverter.php";
-require "src/classes/converters/temperature/RankineConverter.php";
-require "src/classes/converters/temperature/CelciusConverter.php";
-require "src/classes/converters/temperature/KelvinConverter.php";
-require "src/classes/Unit.php";
-require "src/constants.php";
+require_once "src/classes/converters/area/AreaConverter.php";
+require_once "src/classes/converters/distance/DistanceConverter.php";
+require_once "src/classes/converters/temperature/FahrenheitConverter.php";
+require_once "src/classes/converters/temperature/RankineConverter.php";
+require_once "src/classes/converters/temperature/CelciusConverter.php";
+require_once "src/classes/converters/temperature/KelvinConverter.php";
+require_once "src/classes/Unit.php";
+require_once "src/constants.php";
 
 function unitFactory(String $unit) {
     $units = array(

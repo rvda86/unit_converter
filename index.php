@@ -1,5 +1,5 @@
 <?php 
-    require "src/constants.php";
+    require_once "src/constants.php";
 ?>
 
 <!DOCTYPE html>
@@ -15,8 +15,8 @@
         <div id="grid">
 
         <?php
-            include "src/components/header.php";
-            include "src/components/main.php";
+            require_once "src/components/header.php";
+            require_once "src/components/main.php";
         ?>
 
         </div>
