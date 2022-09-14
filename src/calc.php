@@ -9,11 +9,11 @@ function calc(String $from, String $to, String $amount) {
     try {
 
         $validFloat = filter_var($amount, FILTER_VALIDATE_FLOAT);
-        if ($amount == "-" || $amount == "-.") {
+        if ($amount == "-" || $amount == "-." || $amount == "0" || $amount == ".") {
             $validFloat = true;
         }
 
-        if (!$validFloat) {
+        if ($validFloat == false) {
             throw new InvalidValueException();
         }
 
