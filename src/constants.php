@@ -12,14 +12,6 @@ define("UNITS", array(
     "TEMPERATURES"=>array("celcius", "kelvin", "fahrenheit", "rankine")
 ));
 
-define("DISTANCES", array("millimeter", "centimeter", "meter", "kilometer", "inch", "foot", "yard", "mile"));
-define("AREAS", array("square millimeter", "square centimeter", "square meter", "square kilometer", 
-                    "square inch", "square foot", "square yard", "square mile", "acre", "hectare"));
-define("VOLUMES", array("cubic millimeter", "cubic centimeter", "cubic meter", "cubic kilometer", 
-                    "cubic inch", "cubic foot", "cubic yard", "cubic mile", "liter", "gallon")); 
-define("WEIGHTS", array("gram", "milligram", "kilogram", "metric ton", "ounce", "pound"));                
-define("TEMPERATURES", array("celcius", "kelvin", "fahrenheit", "rankine"));
-
 define("DISTANCE_RATIO_TO_METER", array(
                                         "millimeter"=>"0.001",
                                         "centimeter"=>"0.01", 
