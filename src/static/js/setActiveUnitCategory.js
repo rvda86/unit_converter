@@ -8,7 +8,7 @@ function resetValues() {
     toSelect.innerHTML = ''
     amountInput.value = ''
     resultInput.value = ''
-    Array.from(document.getElementById('unit-ul').children).forEach((item) => item.style.backgroundColor = "grey")
+    Array.from(document.getElementById('unit-ul').children).forEach((item) => item.style.backgroundColor = "rgb(218, 218, 218)")
 }
 
 constantsArrays = {"distance": DISTANCES, "area": AREAS, "volume": VOLUMES, "weight": WEIGHTS, "temperature": TEMPERATURES}

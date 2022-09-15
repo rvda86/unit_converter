@@ -1,3 +1,3 @@
 <header id="header">
-    <p id="header-logo">unit conversion</p>
+    <h3 id="header-logo">unit converter</h3>
 </header>

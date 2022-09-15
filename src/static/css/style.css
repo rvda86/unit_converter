@@ -19,22 +19,36 @@ body {
     margin: 0;
     font-size: 100%;
     font-family: sans-serif;
-    background-color: black;
+    background-color: rgb(60, 60, 60);
+    color: rgb(60, 60, 60);
 }
 
 /* header */
 #header {
     margin: auto;
+    width: 100%;
+    text-align: center;
+    color: rgb(218, 218, 218);
+    background-color: rgb(20, 20, 20);
 }
+
+#header-logo {
+    font-family: "Rubik", sans-serif;
+}
+
 
 /* main */
 main {
     margin: auto;
 }
 
-.main-box {
+#main-box {
     display: flex;
     flex-direction: row;
+    background-color: white;
+    border-radius: 5px;
+    margin: 2px;
+    margin-top: 50px;
 }
 
 #unit-ul {
@@ -44,31 +58,31 @@ main {
 }
 
 .unit-li {
-    padding: 10px;
-    background-color: grey;
+    padding: 13px;
+    border-radius: 5px;
+    font-size: 0.9em;
 }
 
 #unit-calc-div {
     padding: 10px;
     margin: 0;
-    background-color: white;
 }
 
 .amount-input {
     padding: 5px;
     width: 150px;
+    margin: 3px;
 }
 
 .unit-select {
     padding: 5px;
     background-color: white;
+    margin: 3px;
+    width: 150px;
 }
 
 p {
-    padding: 5px;
+    padding: 3px;
     margin: 0;
-}
-
-#result-test  {
-    color: white;
+    font-size: 0.8em;
 }

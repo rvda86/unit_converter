@@ -1,6 +1,6 @@
 <main id="main">
 
-    <div class="main-box" >
+    <div id="main-box" >
 
         <div id="unit-list-div">
             <ul id="unit-ul">
