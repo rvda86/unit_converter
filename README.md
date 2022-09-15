@@ -2,7 +2,7 @@
 
 A simple unit converter website.
 
-[Live Demo](https://unitconverter.robinvdaardweg.com)
+[Live Demo](http://unitconverter.robinvdaardweg.com)
 
 ## Tech Stack
 
