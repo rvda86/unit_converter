@@ -8,8 +8,12 @@ class ValueTooLowException extends Exception {
     protected $message = "input value too low";
 }
 
-class InvalidValueException extends Exception {
+class InvalidAmountException extends Exception {
     protected $message = "invalid input value";
+}
+
+class UnknownUnitException extends Exception {
+    protected $message = "unit unknown";
 }
 
 ?>

@@ -2,6 +2,16 @@
 
 bcscale(100);
 
+define("UNITS", array(
+    "DISTANCES"=>array("millimeter", "centimeter", "meter", "kilometer", "inch", "foot", "yard", "mile"),
+    "AREAS"=>array("square millimeter", "square centimeter", "square meter", "square kilometer", 
+                    "square inch", "square foot", "square yard", "square mile", "acre", "hectare"),
+    "VOLUMES"=>array("cubic millimeter", "cubic centimeter", "cubic meter", "cubic kilometer", 
+                    "cubic inch", "cubic foot", "cubic yard", "cubic mile", "liter", "gallon"),
+    "WEIGHTS"=>array("gram", "milligram", "kilogram", "metric ton", "ounce", "pound"),
+    "TEMPERATURES"=>array("celcius", "kelvin", "fahrenheit", "rankine")
+));
+
 define("DISTANCES", array("millimeter", "centimeter", "meter", "kilometer", "inch", "foot", "yard", "mile"));
 define("AREAS", array("square millimeter", "square centimeter", "square meter", "square kilometer", 
                     "square inch", "square foot", "square yard", "square mile", "acre", "hectare"));

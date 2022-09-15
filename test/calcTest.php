@@ -8,6 +8,14 @@ class calcTest extends PHPUnit\Framework\TestCase {
     private $invalidValueMsg = "invalid input value";
     private $incompatibleUnitsMsg = "incompatible units";
     private $inputValueTooLowMsg = "input value too low";
+    private $unitNotSupportedMsg = "unit unknown";
+
+    public function testUnsupportedUnit() {
+        $this->assertEquals(calc("penguin", "giraffe", "100"), $this->unitNotSupportedMsg);
+        $this->assertEquals(calc("meter", "giraffe", "100"), $this->unitNotSupportedMsg);
+        $this->assertEquals(calc("penguin", "meter", "100"), $this->unitNotSupportedMsg);
+        $this->assertNotEquals(calc("meter", "meter", "100"), $this->unitNotSupportedMsg);
+    }
 
     public function testInvalidFloat() {
         $this->assertEquals(calc("meter", "meter", "ewqr"), $this->invalidValueMsg);
