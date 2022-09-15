@@ -17,13 +17,13 @@
             <div>
                 <p>From</p>
                 <input id="from-amount" class="amount-input" placeholder="amount" type="text" onkeyup="getResult()">
-                <select class="unit-select" onclick="getResult()" name="from" id="from-unit"></select>
+                <select class="unit-select" onchange="getResult()" name="from" id="from-unit"></select>
             </div>
 
             <div>
                 <p>To</p>
                 <input id="result" class="amount-input" placeholder="result" type="text" readonly>
-                <select class="unit-select" onclick="getResult()" name="to" id="to-unit"></select>
+                <select class="unit-select" onchange="getResult()" name="to" id="to-unit"></select>
             </div>  
 
         </div>

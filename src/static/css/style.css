@@ -47,8 +47,7 @@ main {
     flex-direction: row;
     background-color: white;
     border-radius: 5px;
-    margin: 2px;
-    margin-top: 50px;
+    margin: 50px 5px;
 }
 
 #unit-ul {
