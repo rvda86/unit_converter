@@ -16,7 +16,7 @@
 
             <div>
                 <p>From</p>
-                <input id="from-amount" class="amount-input" placeholder="amount" type="text" onkeyup="getResult()">
+                <input id="from-amount" type="number" class="amount-input" placeholder="amount" type="text" onkeyup="getResult()" onchange="getResult()">
                 <select class="unit-select" onchange="getResult()" name="from" id="from-unit"></select>
             </div>
 
